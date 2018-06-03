@@ -1,4 +1,5 @@
-import httplib
+# import httplib
+import http.client
 import re
 import urllib
 import urlparse
@@ -90,7 +91,7 @@ def proxy_request(host, file=""):
         else:
             form_data = None
 
-        conn = httplib.HTTPConnection(hostname, port)
+        conn = http.client.HTTPConnection(hostname, port)
 
         conn.request(request.method, path, body=form_data, headers=request_headers)
 
