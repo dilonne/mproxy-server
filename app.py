@@ -144,4 +144,4 @@ def proxy_request(host, file=""):
 
 app.register_blueprint(proxy)
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=DEBUG_FLAG, port=LISTEN_PORT)
