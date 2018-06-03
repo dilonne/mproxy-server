@@ -1,8 +1,6 @@
-# import httplib
 import http.client
 import re
 import urllib
-# import urlparse
 import json
 import requests
 
