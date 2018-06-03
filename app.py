@@ -142,6 +142,6 @@ def proxy_request(host, file=""):
         return flask_response.data
 
 
-# app.register_blueprint(proxy)
+app.register_blueprint(proxy)
 if __name__ == '__main__':
     app.run()
