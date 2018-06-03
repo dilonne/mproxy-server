@@ -2,7 +2,7 @@
 import http.client
 import re
 import urllib
-import urlparse
+# import urlparse
 import json
 import requests
 
